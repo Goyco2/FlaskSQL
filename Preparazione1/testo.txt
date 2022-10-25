@@ -1,0 +1,7 @@
+inizare un sito web che permette all'utente di visualizzare una serie di informazioni riguardanti la cieta bike store. l'home page permette all'utente di scegliere una tra tra le seguenti opzioni.
+
+-il numero di prodotti per ogni categoruia, sia in formato tabellare, sia sotto forma di graficio a barre verticale.
+-iln numero di ordini per ogni stpre, sia in formato tabellare, si sotto froma di grafico orizzontale desc.
+-numero di prodotti per ogni brand, sia in formato tabellarere , sia sotto forma di grafico a torta
+- l'elenco devi visualizzare prodotti che cominciano con una stringa di carateri.
+Una volta effetuata la scelta l'utente clicca su un bottone che fornisce le informazioni richieste. Utilizare Bootstrap per l'interfaccia
