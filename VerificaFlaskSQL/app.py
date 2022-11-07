@@ -26,7 +26,7 @@ def result():
     Cognome = request.args['Cognome']
     query = f"select * from sales.customers where first_name = '{Nome}' and last_name = '{Cognome}' "
     d = pd.read_sql(query, conn)
-    if Nome not in d['first_name'] and Cognome not in d['last_name']:
+    if Nome not in d.first_name.tolist() or Cognome not in d.last_name.tolist():
         return render_template('error.html')
     else:
         return render_template('result.html', nomiColonne = d.columns.values, dati = list(d.values.tolist()))
