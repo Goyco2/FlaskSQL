@@ -15,11 +15,18 @@
             {% endfor %}
         </tr>
         {% for record in dati %}
-            <tr class="table-dark">
+            <tr class="table-primary">
                 {% for index in range(nomiColonne|length)%}
-                    <td>
-                        <a href="/totaleOrdini/{{record[index]}}">{{record[index]}}</a>
-                    </td>
+                    {%if index == 0 %}
+                        <td>
+                            <a href="/totaleOrdini/{{record[index]}}">{{record[index]}}</a>
+                        </td>
+                    {%else%}
+                        <td>
+                            {{record[index]}}
+                        </td>
+
+                    {%endif%}
                 {% endfor %}
             </tr>
         {% endfor %}
